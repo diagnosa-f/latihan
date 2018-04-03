@@ -155,6 +155,7 @@ h5 {
 .tm-slider-img {
 	padding-left: 10px;
 	padding-right: 10px;
+	width: inherit;
 }
 
 .slick-dots li button:before {
