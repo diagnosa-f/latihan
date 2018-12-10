@@ -109,6 +109,7 @@
         <div class="row">
             <div class="tm-img-container">
                 <div class="tm-img-slider">
+<<<<<<< HEAD
 
                     <a class="image-link" href="img/gallery-img-01.jpg" style=><img src="img/gallery-img-01-tn.jpg" alt="Image"
                                                                              class="tm-slider-img"></a>
@@ -126,6 +127,17 @@
                     <a class="image-link" href="img/gallery-img-06.jpg"><img src="img/gallery-img-06-tn.jpg" alt="Image"
                                                                              class="tm-slider-img"></a>
 
+=======
+ 
+                    <a class="image-link" href="img/gallery-img-01.jpg"><img src="img/gallery-img-01-tn.jpg" alt="Image" class="tm-slider-img"></a>
+                    <a class="image-link" href="img/zuko.jpeg"><img src="img/zuko.jpeg" alt="Image" class="tm-slider-img"></a>
+                    <a class="image-link" href="img/gallery-img-02.jpg"><img src="img/gallery-img-02-tn.jpg" alt="Image" class="tm-slider-img"></a>
+                    <a class="image-link" href="img/gallery-img-03.jpg"><img src="img/gallery-img-03-tn.jpg" alt="Image" class="tm-slider-img"></a>  
+                    <a class="image-link" href="img/gallery-img-04.jpg"><img src="img/gallery-img-04-tn.jpg" alt="Image" class="tm-slider-img"></a>
+                    <a class="image-link" href="img/gallery-img-05.jpg"><img src="img/gallery-img-05-tn.jpg" alt="Image" class="tm-slider-img"></a>
+                    <a class="image-link" href="img/gallery-img-06.jpg"><img src="img/gallery-img-06-tn.jpg" alt="Image" class="tm-slider-img"></a>
+                      
+>>>>>>> f8bd09f955626a9a1745c64f35a66835d46224c0
                 </div>
             </div>
         </div>
@@ -167,6 +179,7 @@
                         fringilla velit.
                     </p>
                     <br>
+<<<<<<< HEAD
                     <address>
                         <b>Our Address</b><br>
                         <br>
@@ -174,10 +187,17 @@
                         Kec. Sawangan, Depok<br>
                         Jawa Barat
                     </address>
+=======
+                    Toped Tower<br>
+                    Karet Kuningan<br>
+                    Jakarta Selatan
+                  </address>
+>>>>>>> f8bd09f955626a9a1745c64f35a66835d46224c0
                 </div>
             </div>
         </div>
 
+<<<<<<< HEAD
         <div class="footer">
             <p>Copyright © 2018 Tokopediax
                 . Design: <a href="http://www.tooplate.com" target="_parent">Tooplate</a></p>
@@ -223,6 +243,70 @@
                 infinite: true,
                 slidesToShow: 2,
                 slidesToScroll: 1
+=======
+            <div class="footer">
+              <p>Copyright © 2018 Tokopedia
+                . Design: <a href="http://tokopedia.com" target="_parent">Tokopedia</a></p>
+              </div>
+            </div>
+            
+          </div>
+
+
+          <!-- load JS files -->
+          <script src="js/jquery-1.11.3.min.js"></script>        <!-- jQuery (https://jquery.com/download/) -->
+          <script src="js/parallax.min.js"></script>
+     
+          <script type="text/javascript" src="slick/slick.min.js"></script> 
+          <!-- Slick Carousel -->
+
+          <!-- Magnific Popup core JS file -->
+          <script src="js/jquery.magnific-popup.min.js"></script>
+          
+
+          <script>
+
+            function setCarousel() {
+
+              var slider = $('.tm-img-slider');
+
+              if (slider.hasClass('slick-initialized')) {
+                slider.slick('destroy');
+              }
+
+              if($(window).width() > 991){
+                  // Slick carousel
+                  slider.slick({
+                    dots: true,
+                    infinite: true,
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                  });
+                }
+                else {
+                 slider.slick({
+                  dots: true,
+                  infinite: true,
+                  slidesToShow: 2,
+                  slidesToScroll: 1
+                });
+               }
+             }
+
+             $(document).ready(function(){
+
+              setCarousel();
+              $('.tm-img-slider').magnificPopup({
+                delegate: 'a', // child items selector, by clicking on it popup will open
+                type: 'image'
+                // other options
+
+              });
+
+              $(window).resize(function() {
+                setCarousel();
+              });
+>>>>>>> f8bd09f955626a9a1745c64f35a66835d46224c0
             });
         }
     }
